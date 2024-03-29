@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/hwinfo"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="60dp"
+        android:onClick="hwsec"
+        android:text="Device Info"
+        android:textColorHighlight="#05FFE2"
+        android:textColorLink="#05FFE2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cpus"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:onClick="kernel"
+        android:text="Kernel"
+        android:textColorHighlight="#05FFE2"
+        android:textColorLink="#05FFE2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hwinfo" />
+
+    <Button
+        android:id="@+id/cpu_gpu"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:onClick="cgu"
+        android:text="CPU"
+        android:textColorHighlight="#05FFE2"
+        android:textColorLink="#05FFE2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpus" />
+
+    <Button
+        android:id="@+id/battery"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:onClick="bat"
+        android:text="Battery"
+        android:textColorHighlight="#05FFE2"
+        android:textColorLink="#05FFE2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpu_gpu" />
+
+    <Button
+        android:id="@+id/rams"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:onClick="rams"
+        android:text="Ram"
+        android:textColorHighlight="#05FFE2"
+        android:textColorLink="#05FFE2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/battery" />
+
+    <Button
+        android:id="@+id/ip_add"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onClick"
+        android:text="IP Address"
+        android:textColorHighlight="#05FFE2"
+        android:textColorLink="#05FFE2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rams" />
+
+    <Button
+        android:id="@+id/pub_ip"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:onClick="pub_ips"
+        android:text="Public IP"
+        android:textColorHighlight="#05FFE2"
+        android:textColorLink="#05FFE2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ip_add" />
+
+    <Button
+        android:id="@+id/ping"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:onClick="ping"
+        android:text="Ping"
+        android:textColorHighlight="#05FFE2"
+        android:textColorLink="#05FFE2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pub_ip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

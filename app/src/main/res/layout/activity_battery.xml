@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".battery">
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="240dp"
+        android:text="Status: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewStatus"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStatus"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewVoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltage: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewHealth"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHealth"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Percentage: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewVoltage"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVoltage"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewPercentage"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPercentage"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
