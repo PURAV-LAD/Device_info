@@ -17,7 +17,7 @@ import java.net.URL;
 
 public class pub_ip extends AppCompatActivity {
 
-    private Button btnCheccdkIP;
+    private Button btnCheckIP;
     private TextView tvResult;
 
     @Override
